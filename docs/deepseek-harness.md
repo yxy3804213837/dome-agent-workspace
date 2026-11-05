@@ -259,8 +259,8 @@ npx @deepseek-ai/dsh web
 # 一次性任务：新会话执行，打印最终答案后退出
 dsh --profile headless "运行测试并总结失败原因"
 
-# 安装插件到 web profile
-dsh plugin --profile web add @scope/dsh-plugin-example
+# 安装插件到 web profile（把 <插件包名> 换成实际包名）
+dsh plugin --profile web add <插件包名>
 
 # 以 SDK 服务启动（JSON-RPC over stdio）
 dsh --profile sdk
